@@ -1,0 +1,322 @@
+/* common */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #151516;
+  font-family: Helvetica, Arial, "Helvetica Neue", sans-serif;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: none;
+}
+
+select:-moz-focusring {
+  text-shadow: 0 0 0 #000;
+  color: transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+a {
+  text-decoration: underline;
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+ul,
+ol,
+dl {
+  list-style-type: none;
+  margin: 0;
+}
+
+ol {
+  margin: 0;
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+
+img {
+  border: none;
+  vertical-align: top;
+}
+
+
+/* img responsive */
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+  min-height: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 15px;
+}
+
+/*------------------------------------------- content ------------------------------------------------*/
+.content {
+  min-width: 320px;
+  max-width: 800px;
+  padding: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+.card {
+  padding: 25px;
+}
+
+@media (max-width: 568px) {
+  .card {
+    padding: 10px;
+  }
+}
+
+.card__header {
+  margin: 0 0 25px;
+}
+
+.card__logo {
+  width: 69px;
+  height: 69px;
+  background: linear-gradient(171.88deg, #273ECE 6.24%, #9232CF 92.69%);
+  padding: 2px;
+  border-radius: 50%;
+  margin: 0 20px 0 0;
+}
+
+.card__logo-inner {
+  border-radius: 50%;
+  background: #ffffff;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__logo-img {
+  width: 54px;
+  height: auto;
+  display: block;
+}
+
+.card__header-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card__title {
+  font-size: 20px;
+  line-height: 126.7%;
+  color: #151516;
+  font-weight: bold;
+  margin: 0;
+  max-width: 420px;
+  padding: 5px 0;
+}
+
+.card__verified {
+  background-color: #E7EBFB;
+  border-radius: 48px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4px 12px 4px 5px;
+  margin: 0 0 0 89px;
+}
+
+@media (max-width: 568px) {
+  .card__verified {
+    margin: 5px 0 0;
+  }
+}
+
+.card__verified-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  margin: 0 3px 0 0;
+}
+
+.card__verified-label {
+  font-size: 12px;
+  line-height: 126.7%;
+  color: #66666A;
+  font-weight: 400;
+}
+
+.card__row {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 9px;
+}
+
+.card__row .card__box {
+  width: 45%;
+  padding-right: 20px;
+}
+
+@media (max-width: 568px) {
+  .card__row .card__box {
+    padding-right: 0;
+    width: 100%;
+  }
+}
+
+.card__box {
+  padding: 0 0 15px;
+}
+
+.card__box-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 0 10px;
+}
+
+.card__box-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  margin: 0 12px 0 0;
+}
+
+.card__box-title {
+  font-size: 14px;
+  line-height: 126.7%;
+  color: #292929;
+  font-weight: bold;
+}
+
+.card__box-content {
+  padding: 0 0 0 28px;
+  width: 100%;
+}
+
+.card__box-parag {
+  margin: 0 0 6px;
+  overflow: hidden;
+  display: flex;
+}
+
+.card__box-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #0A39D6;
+  font-size: 16px;
+  line-height: 126.7%;
+  font-weight: bold;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__social {
+  padding: 10px 0 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.card__social-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 10px 10px 0;
+  border-radius: 40px;
+  border: 1px solid #D2D5DA;
+  padding: 9px 11px 9px 9px;
+  text-decoration: none;
+}
+
+.card__social-item-icon {
+  margin: 0 5px 0 0;
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+}
+
+.card__social-item-label {
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
+  color: #151516;
+  margin-right: 5px;
+}
+
+.card__social-item-link {
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
+  color: #0A39D6;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card__footer-picture {
+  width: 138px;
+  display: block;
+}
